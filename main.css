@@ -6,18 +6,14 @@
 }
 
 /* Blinking cursor effect */
-.blinking-cursor {
-  display: inline-block;
-  width: 10px;
-  background-color: var(--text-color);
-  margin-left: 5px;
+.blinking-cursor::after {
+  content: '█';
   animation: blink 1s steps(2, start) infinite;
-  vertical-align: bottom;
 }
 
 @keyframes blink {
-  0%, 50% { background-color: var(--text-color); }
-  50.01%, 100% { background-color: transparent; }
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
 
 body {
