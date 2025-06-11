@@ -3,47 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Platform Engineer | Ragini</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2em;
-      text-align: center;
-    }
-    section {
-      padding: 2em;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-top: 1em;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      color: #666;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-
 <header>
   <h1>Ragini Jain</h1>
-  <p>Platform Engineer | DevOps | Cloud Infrastructure</p>
+  <p>Platform Engineer | DevOps | MLOps </p>
+  <button id="theme-toggle">Toggle Dark Mode</button>
 </header>
-
 <section>
   <h2>About Me</h2>
   <p>I’m a platform engineer with a focus on building scalable, reliable infrastructure using modern DevOps practices. I have experience with Kubernetes, CI/CD pipelines, cloud platforms, IaC, monitoring, and observability tooling.</p>
@@ -55,6 +23,7 @@
     <li>OS: Linux</li>
     <li>Cloud: AWS, GCP, Open Telekom Cloud</li>
     <li>Containers: Docker, Kubernetes</li>
+    <li>MLOps: kubeflow</li>
     <li>CI/CD: Gitlab, ArgoCD</li>
     <li>IaC: Terraform, Helm, Ansible, Crossplane, Pulumi</li>
     <li>Monitoring: Prometheus, Grafana, ELK stack</li>
@@ -64,8 +33,15 @@
 </section>
 
 <footer>
-  <p>© 2025 Ragini Jain</p>
+  <p>© 2025 Ragini Jain. All rights reserved.</p>
 </footer>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
 
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+  });
+</script>
 </body>
 </html>
