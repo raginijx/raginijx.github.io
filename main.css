@@ -1,11 +1,12 @@
 /* === Base Theme Variables === */
 :root {
-  --primary-color: #ffb6c1;      /* Light Pink */
-  --accent-color: #db7093;       /* Pale Violet Red */
-  --bg-color: #fff0f5;           /* Lavender Blush */
-  --text-color: #3a3a3a;         /* Dark Gray */
-  --section-bg: #ffffff;         /* White */
+  --primary-color: #c08081;    /* Dusty Rose */
+  --accent-color: #b68ca0;     /* Soft Mauve */
+  --bg-color: #ffe4e1;         /* Misty Rose */
+  --text-color: #3c3c3c;       /* Dark Charcoal */
+  --section-bg: #f5f5f5;       /* White Smoke */
 }
+
 
 /* === Dark Mode Overrides === */
 body.dark-theme {
